@@ -1,0 +1,13 @@
+.linha-do-tempo {
+  background-color: rgb(144, 252, 165, 0.3);
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.linha-do-tempo .container-cards {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

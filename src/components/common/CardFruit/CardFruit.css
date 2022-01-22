@@ -1,0 +1,32 @@
+.cards {
+  width: 200px;
+  max-width: 200px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(255, 253, 231);
+  border: 3px solid rgb(247, 190, 190);
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  height: 80px;
+}
+
+.infoicon {
+  cursor: pointer;
+}
+.nome-fruta {
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.gene-fruta,
+.nome-fruta {
+  font-weight: 600;
+}

@@ -1,0 +1,40 @@
+.navegador {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-butao > span,
+.nav-butao > .link-navegador {
+  border: 1px solid blue;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+nav.nav-butao .link-navegador.active {
+  text-decoration: underline;
+}
+
+.nav-butao .link-navegador:hover {
+  transition: 0.5s;
+  background-color: rgb(133, 196, 196);
+}
+
+.logo img {
+  width: 220px;
+}
+
+.qtd-itens {
+  top: 10px;
+  font-size: 11px;
+  padding: 2px 5px;
+  margin-left: 6px;
+  color: rgb(4, 121, 66);
+  background-color: rgb(84, 214, 197);
+  border: 1px solid rgb(40, 187, 96);
+  border-radius: 50%;
+}

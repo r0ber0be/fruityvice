@@ -1,20 +1,19 @@
 import { createContext, useContext, useEffect, useState } from 'react';
-import api from '../services/api';
-
+import axios from 'axios';
 export const CartContext = createContext({});
 
 export const CartProvider = ({children}) => {
   //onde estão os dados vindos da api
-  const [fruitsDb, setFruitsDbCart] = useState([]);
-  
+  const [fruitsDb, setFruitsDb] = useState([]);
   useEffect(() => {
-    api.get("all").then(({data}) => {
-      setFruitsDbCart(data);
+    axios.get("/all").then(({data}) => {
+      setFruitsDb(data);
+      console.log(data)
     }).catch((error) => {
       alert(error);
     });
   }, []);
-
+  console.log(fruitsDb)
   //onde vão ser guardados os itens do carrinho
   const [fruitsCart, setFruitsCart] = useState([]);
   //verificando se há itens salvos no localstorage ao atualizar a página

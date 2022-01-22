@@ -8,12 +8,10 @@ export const CartProvider = ({children}) => {
   useEffect(() => {
     axios.get("/all").then(({data}) => {
       setFruitsDb(data);
-      console.log(data)
     }).catch((error) => {
       alert(error);
     });
   }, []);
-  console.log(fruitsDb)
   //onde vão ser guardados os itens do carrinho
   const [fruitsCart, setFruitsCart] = useState([]);
   //verificando se há itens salvos no localstorage ao atualizar a página

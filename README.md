@@ -11,12 +11,9 @@ React, ReactRouter, Axios
 Para "startar" o sistema no local host, primeiro instale as dependências
 
 - npm install
-  E então rode o sistema com
 
-- npm start\
+E então rode o sistema com
+
+- npm start
 
 Pronto! Agora o sistema do carrinho está acessível.
-
-## Deployment (O CORS deve ser desabilitado para o funcionamento do site)
-
-- https://fruitivyce.netlify.app/
